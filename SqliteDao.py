@@ -59,20 +59,10 @@ class SqliteDao:
     def get_all_recents(self):
         self.open()
         c = self.__con.cursor()
-        c.execute('select * from RecentPullRequests')
+        c.execute('SELECT * FROM RecentPullRequests')
         data = c.fetchall()
         self.close()
         return data
-        # if data:
-        #     prs = []
-        #     for result in data:
-        #         pr = PullRequest(result[0], result[1], result[2], result[3], result[4], result[5], result[6],
-        #                          result[7], result[8], result[9], result[10], result[11], result[12], result[13],
-        #                          result[14])
-        #         prs.append(pr)
-        # else:
-        #     prs = None
-        # return prs
 
     # ----------------------
 
