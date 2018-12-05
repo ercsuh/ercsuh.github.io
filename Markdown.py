@@ -18,7 +18,7 @@ for branch in reports.keys():
 	out_file = open(new_path, "w")
 
 	output = ""
-	output += "#{}\n".format(branch)
+	output += "# {}\n".format(branch)
 	report = json.loads(reports[branch][1])
 
 	statuses = []
