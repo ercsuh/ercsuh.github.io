@@ -1,8 +1,8 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 show_downloads: true
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
-overflow-x: hidden
+overflow-x: auto
