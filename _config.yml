@@ -5,4 +5,4 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-overflow-x: hidden
+overflow-x: auto
